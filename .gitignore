@@ -1,0 +1,25 @@
+# Sheet.4
+# Ex.1
+import random
+def generate_password(length, chars):
+    password_list = [random.choice(chars) for _ in range(length)]
+    return ''.join(password_list)
+
+# Ex.2
+all_chars = ''.join(chr(i) for i in range(48, 58) + range(65, 91) + range(97, 123))
+print(all_chars)
+
+# Ex.3
+family_names = ["John", "Jane", "Doe", "Smith"]
+used_letters = {char for name in family_names for char in name if char.isalpha()}
+print(used_letters)
+
+# Ex.4
+def average(*numbers):
+    return sum(numbers) / len(numbers)
+
+# Ex.5
+def substitute(equation, **kwargs):
+    for var, value in kwargs.items():
+        equation = equation.replace(var, str(value))
+    return equation
