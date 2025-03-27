@@ -6,7 +6,7 @@ def generate_password(length, chars):
     return ''.join(password_list)
 
 # Ex.2
-all_chars = ''.join(chr(i) for i in range(48, 58) + range(65, 91) + range(97, 123))
+all_chars = ''.join(chr(i) for i in list(range(48, 58)) + list(range(65, 91)) + list(range(97, 123)))
 print(all_chars)
 
 # Ex.3
